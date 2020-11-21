@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = function(){
+            var obtn = document.getElementById("btn");
+            var opic =document.getElementById("pic");
+            var flag = true;
+            obtn.onclick = function(){
+                if(flag){
+                    opic.src ="banner.png";
+                    flag = false;
+                }else{
+                    opic.src ="one.png";
+                    flag = true;
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <input id="btn" type="button" value="修改"/><br/>
+    <img id="pic" src="one.png"/>
+</body>
+</html>
